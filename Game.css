@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+@font-face {
+    font-family: "Talina";
+    src: url("./MyFonts/Talina.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: "Bilderberg";
+    src: url("./MyFonts/Bilderberg.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: "RusticRoadway";
+    src: url("./MyFonts/RusticRoadway.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: "GraenMental-Regular";
+    src: url("./MyFonts/GraenMetal-Regular.otf") format("opentype");
+    
+}
+@font-face {
+    font-family: "EagleHorizonP";
+    src: url("./MyFonts/EagleHorizonP.ttf") format("truetype");   
+}
+@font-face {
+    font-family: "Awesome";
+    src: url("./MyFonts/Awesome.ttf") format("truetype");   
+}
+@font-face {
+    font-family: "Xirod";
+    src: url("./MyFonts/Xirod.otf") format("opentype");   
+}
+@font-face {
+    font-family: "Transcity";
+    src: url("./MyFonts/Transcity.otf") format("opentype");   
+}
+@font-face {
+    font-family: "Astroz";
+    src: url("./MyFonts/Astroz.ttf") format("truetype");   
+}
+@font-face {
+    font-family: "ROGENZ";
+    src: url("./MyFonts/ROGENZ.otf") format("opentype");   
+}
+
+  body{
+    background-color: black;
+    color: white;
+}  
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    padding: 15px;
+     box-shadow:0 4px 10px rgba(0,0,0,0.2);
+     z-index: 9999;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-left: 200px;
+    font-size: large;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.logo{
+    font-size: 30px;
+    font-weight:bold;
+    font-family: "Xirod",sans-serif;
+    color: lightseagreen;
+    
+}
+span{
+    color: white;
+    
+}
+nav a:hover{
+    color: gold;
+    
+    
+}
+nav a:active{
+    font-size: 20px;
+}
+.btn1{
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.btn1:hover{
+    background-color: gold;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition-duration: 2s;
+    
+}
+.searchbox{
+    margin: 30px;
+    margin-top: 100px;
+    padding: 15px;
+    width:50% ;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: rgb(32, 31, 31);
+    color: white;
+
+}
+.first-bg-img{
+    background-image: url("/ImagesForFrontEnd/Joystickimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    box-shadow: 0 0px 20px rgba(123,97,255,0.4);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+    
+}
+
+.play{
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+.p1{
+       font-size: 20px;
+       color: white;
+       margin-top: 40px;
+}
+.btn2{
+   margin-top: 30px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: cornflowerblue;
+   padding: 20px;
+   border: 2px solid black;
+   border-radius: 30px;
+
+}
+.btn2:hover{
+    box-shadow: 3px 3px 30px cornflowerblue ;
+transition: 2s;
+}
+.win{
+    color: rgb(94, 8, 128);
+}
+
+.cards{
+    padding-top: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    overflow: hidden;
+    gap: 20px;
+    text-align: center;
+
+    
+}
+.cards img{
+    height: 300px;
+    width: 100%;
+     transition: transform 0.5s ease;
+
+
+}
+.card1{
+    border: 2px solid grey;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card1:hover{
+     transform: translateY(-10px);
+    box-shadow: 0 15px 35px blueviolet;
+    
+}
+.card1:hover img{
+    transform: scale(1.1);
+
+}
+.card-content{
+    background-color: #1b1b1b;
+    padding: 15px;
+}
+.card-content h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Talina";
+    background-color: blueviolet;
+    color: white;
+}
+.card-content p{
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 15px;
+    
+    font-family: sans-serif;
+}
+
+.gamehead{
+    margin-top: 35px;
+    font-size: 30px;
+    font-family: "orbitron",sans-serif;
+    color: blueviolet;
+    box-shadow: 3px 3px 20px;
+}
+
+
+.AG{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 200px;
+    color: blueviolet;
+    box-shadow: 3px 3px 20px;
+}
+
+.line{
+    margin-top: 40px;
+}
+.footer{
+    background:black;
+    padding:60px 8%;
+    border-top:2px solid cadetblue;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-brand h2{
+    color:#00aeff;
+    margin-bottom:15px;
+    font-family: "Bilderberg",sans-serif;
+}
+
+.footer-brand p{
+    color:white;
+    line-height:1.7;
+}
+
+.footer-links h3{
+    color:#00aeff;
+    margin-bottom:15px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:8px 0;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#00aeff;
+    transform:translateX(5px);
+}
+
+.social-icons{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid #00aeff;
+    border-radius:50%;
+    color:white;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#00aeff;
+    color:black;
+    box-shadow:0 0 15px #00aeff;
+}
+
+.copyright{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+    text-align:center;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}

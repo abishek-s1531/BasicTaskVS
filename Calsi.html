@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameVerse - Ultimate Gaming Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* Hero */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content span{
+    color:#00e5ff;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+/* Section */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#00e5ff;
+}
+
+/* Games */
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00e5ff;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#aaa;
+}
+
+/* Categories */
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.category{
+    background:rgba(255,255,255,.05);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.category:hover{
+    background:#00e5ff;
+    color:black;
+    transform:scale(1.05);
+}
+
+.category h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.stat{
+    text-align:center;
+    background:rgba(255,255,255,.05);
+    padding:40px;
+    border-radius:20px;
+}
+
+.stat h1{
+    color:#00e5ff;
+    font-size:3rem;
+}
+
+/* Footer */
+footer{
+    background:#050505;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+footer p{
+    color:#888;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">🎮 Genz Games</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Play <span>Thousands</span> of Games</h1>
+        <p>Discover action, racing, sports, RPG, and esports games in one place.</p>
+        <a href="#" class="btn">Explore Games</a>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">🔥 Popular Games</h2>
+
+    <div class="games">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800">
+            <div class="card-content">
+                <h3>Cyber Battle</h3>
+                <p>Futuristic action shooter.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800">
+            <div class="card-content">
+                <h3>Speed Racing</h3>
+                <p>Ultimate racing experience.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800">
+            <div class="card-content">
+                <h3>War Zone</h3>
+                <p>Competitive multiplayer battles.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">🎯 Categories</h2>
+
+    <div class="categories">
+
+        <div class="category">
+            <h2>🔫</h2>
+            <p>Shooter</p>
+        </div>
+
+        <div class="category">
+            <h2>🚗</h2>
+            <p>Racing</p>
+        </div>
+
+        <div class="category">
+            <h2>⚽</h2>
+            <p>Sports</p>
+        </div>
+
+        <div class="category">
+            <h2>🗡️</h2>
+            <p>RPG</p>
+        </div>
+
+        <div class="category">
+            <h2>🧟</h2>
+            <p>Horror</p>
+        </div>
+
+        <div class="category">
+            <h2>🎮</h2>
+            <p>Arcade</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">📈 Live Statistics</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h1>5000+</h1>
+            <p>Games</p>
+        </div>
+
+        <div class="stat">
+            <h1>1M+</h1>
+            <p>Players</p>
+        </div>
+
+        <div class="stat">
+            <h1>150+</h1>
+            <p>Categories</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 GameVerse | Ultimate Gaming Platform</p>
+</footer>
+
+</body>
+</html>
